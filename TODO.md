@@ -6,17 +6,16 @@
 - **Core Features:** No implementation of x402 pay-per-line logic or $clawditor subscription contracts observed yet.
 
 ## Phase 1: Infrastructure & Structure
-- [ ] **Database Setup:** Create `packages/database` for Drizzle ORM with PostgreSQL schema for scan history and user tiers.
-- [ ] **Shared UI Package:** Create `packages/ui` for shared DaisyUI components.
+- [x] **Database Setup:** Create `packages/database` for Drizzle ORM with PostgreSQL schema for scan history and user tiers.
 - [ ] **Environment Configuration:** Set up `.env` templates for API keys, DB URLs, and Contract addresses.
 
 ## Phase 2: Core Web3 Logic ($clawditor & x402)
-- [ ] **Subscription Contract:**
+- [x] **Subscription Contract:**
   - Develop `$clawditor` token-based subscription logic in `packages/hardhat/contracts`.
   - Implement recurring access checks.
-- [ ] **x402 Integration:**
+- [x] **x402 Integration:**
   - Implement LoC (Lines of Code) counter utility in `packages/hono-server`.
-  - Integrate x402 payment flow for pay-per-line audits.
+  - Integrate x402 payment flow for pay-per-line audits. (Initial quote endpoint)
 - [ ] **Scan Engine:** Connect the Hono API to the audit scanning logic (or analyzer tool).
 
 ## Phase 3: Dashboard & UX
