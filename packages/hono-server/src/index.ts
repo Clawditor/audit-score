@@ -33,7 +33,7 @@ app.post("/scan/run", async (c) => {
     ...intentIssues.map(i => ({ 
       severity: i.severity, 
       title: i.title, 
-      range: [i.line, i.line + 1] 
+      range: [i.line, i.line] 
     }))
   ];
 
