@@ -33,13 +33,12 @@ The Audit Scan Dashboard is a comprehensive platform for security researchers an
 ## 4. Repository Structure
 ```
 /
-├── apps/
-│   ├── web/          # Next.js + DaisyUI
-│   └── api/          # Hono Backend
 ├── packages/
-│   ├── ui/           # Shared components
+│   ├── nextjs/       # Next.js + DaisyUI frontend
+│   ├── hono-server/  # Hono Backend API
+│   ├── hardhat/      # Solidity ($clawditor/Subscription logic - Scaffold-ETH 2)
 │   ├── database/     # Postgres/Drizzle schema
-│   └── contracts/    # Solidity ($clawditor/Subscription logic - Scaffold-ETH 2)
+│   └── ui/           # Shared components
 ```
 
 ## 5. Development Roadmap
