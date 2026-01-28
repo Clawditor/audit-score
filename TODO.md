@@ -32,8 +32,8 @@
 
 ## Phase 5: Market Intelligence & Benchmarking
 - [x] **Security Benchmarking Engine:** Build an aggregator to compare project scores against industry peers. (V1 Core Implemented with IndustryPeers.ts)
-- [x] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking. (Next.js Dashboard Components Implemented)
-- [ ] **EAS Attestations:** Integrate Ethereum Attestation Service for on-chain audit score verification.
+- [x] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking. (Next.js Dashboard Components Implemented & Committed)
+- [ ] **EAS Attestations:** Integrate Ethereum Attestation Service for on-chain audit score verification. (Liaising with Architect for implementation details)
 
 ## Critical Milestones (Current Priority)
 1. **Package Setup:** Create `packages/database` and `packages/ui` to complete the monorepo structure.
