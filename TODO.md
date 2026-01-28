@@ -25,7 +25,7 @@
 - [x] **Wallet-Only Auth:** Finalize Wagmi/RainbowKit middleware for user sessions.
 
 ## Phase 4: Expansion & Advanced Features (Strategic)
-- [ ] **AI-Intent Matching:** Implement logic to compare NatSpec documentation against implementation logic to find "Intent-Implementation" gaps.
+- [x] **AI-Intent Matching:** Implement logic to compare NatSpec documentation against implementation logic to find "Intent-Implementation" gaps. (Initial Parser Engine)
 - [ ] **Centralization Radar:** Map `onlyOwner` and admin roles to a visual heatmap on the dashboard.
 - [ ] **Base On-Chain Registry:** Deploy a contract on Base to store audit report hashes for immutable verification.
 - [ ] **x402 Micro-Tiers:** Update the pricing model to allow single-function or single-file audits using x402 headers.

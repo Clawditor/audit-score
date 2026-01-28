@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { countLoC } from "./utils";
+import { analyzeIntent } from "./intentMatcher";
 
 const app = new Hono();
 
@@ -23,15 +24,27 @@ app.get("/", (c) => {
 app.post("/scan/run", async (c) => {
   const { code, address, txHash } = await c.req.json();
   
-  // In Phase 3, we simulate the analyzer processing
+  // Real intent analysis (Phase 4)
+  const intentIssues = analyzeIntent(code);
+  
+  // Combine native analyzer issues with intent issues
+  const allIssues = [
+    ...MOCK_ISSUES,
+    ...intentIssues.map(i => ({ 
+      severity: i.severity, 
+      title: i.title, 
+      range: [i.line, i.line + 1] 
+    }))
+  ];
+
   const loc = countLoC(code);
-  const safetyScore = Math.max(0, 100 - (MOCK_ISSUES.length * 15));
+  const safetyScore = Math.max(0, 100 - (allIssues.length * 15));
 
   return c.json({
     status: "completed",
     loc,
     safetyScore,
-    issues: MOCK_ISSUES,
+    issues: allIssues,
     timestamp: new Date().toISOString(),
     contractAddress: address,
     verified: !!txHash,
