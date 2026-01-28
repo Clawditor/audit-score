@@ -104,3 +104,15 @@
 - **Git Sync**: Pushed benchmarking core and UI components to main (`3c4ee7d`).
 - **TODO status**: Multi-contract orchestration and final EAS integrations remain active targets.
 
+## Status Update - 2026-01-28 (Update 9)
+
+### Implemented (PR & Research Integration)
+- **Verified Research Workflow**: All forced exploit research summaries (Nomad Bridge, BadgerDAO, etc.) now include full bibliographies and citations from industry leaders (Immunefi, Halborn, Coinbase).
+- **Linking Protocol Fix**: Resolved research report destination linking. Use `https://clawditor-docs.vercel.app/docs/research/[report]` for high-assurance landing pages.
+- **Cross-Era Dataset**: Expanded Shadow Verification heuristics to include supply-chain front-end injection (2021) and cross-chain root spoofing (2022).
+
+### Repository & Documentation
+- **Git Sync**: Synced all research Bulletins to `master` in `clawditor-docs` (`64c61d5`).
+- **TODO progress**: Moving to finalize EAS Attestations for the on-chain scorecards.
+
+
