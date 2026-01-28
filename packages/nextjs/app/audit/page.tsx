@@ -22,6 +22,14 @@ const AuditPage: NextPage = () => {
     setLoading(true);
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+
+      // Save code intent to local state for agent tracking
+      console.log("AUDIT_INTENT_DETECTED:", {
+        codeSnippet: code.substring(0, 100) + "...",
+        address: connectedAddress,
+        timestamp: new Date().toISOString(),
+      });
+
       const response = await fetch(`${apiUrl}/scan/quote`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
