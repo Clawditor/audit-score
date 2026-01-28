@@ -25,8 +25,8 @@
 - [x] **Wallet-Only Auth:** Finalize Wagmi/RainbowKit middleware for user sessions.
 
 ## Phase 4: Expansion & Advanced Features (Strategic)
-- [ ] **AI-Intent Matching (Shadow Verification):** Implement logic to detect "Code-Comment Deviations" by comparing NatSpec against implementation.
-- [ ] **Centralization Radar (Comprehensive Risk UI):** Develop a full permission map and risk heatmap for admin roles and privileged functions.
+- [x] **AI-Intent Matching (Shadow Verification):** Implement logic to detect "Code-Comment Deviations" by comparing NatSpec against implementation. (Heuristic Engine v1)
+- [x] **Centralization Radar (Comprehensive Risk UI):** Develop a full permission map and risk heatmap for admin roles and privileged functions. (UI + Logic v1)
 - [ ] **Base On-Chain Registry:** Deploy a contract on Base to store audit report hashes for immutable verification.
 - [ ] **x402 File-Level Tiers:** Update pricing model to allow granular pay-per-line audits for specific `.sol` files.
 
