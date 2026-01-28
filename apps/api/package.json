@@ -1,0 +1,19 @@
+{
+  "name": "backend-hono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "@prisma/client": "^7.3.0",
+    "hono": "^4.11.7",
+    "prisma": "^7.3.0"
+  }
+}
