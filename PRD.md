@@ -7,7 +7,7 @@ The Audit Scan Dashboard is a comprehensive platform for security researchers an
 - **Mono-repo Management:** `pnpm` (Workspace-based)
 - **Frontend:** Next.js with DaisyUI components.
 - **Backend:** Hono Server (Node/Edge compatible).
-- **Database:** PostgreSQL via Drizzle ORM (recommended for Hono/Next convergence).
+- **Database:** PostgreSQL via Drizzle ORM.
 - **Web3 Interface:** RainbowKit, Wagmi, Viem.
 - **Infrastructure:** Ethereum/Base (target for $clawditor payments).
 
