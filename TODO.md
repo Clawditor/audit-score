@@ -25,10 +25,15 @@
 - [x] **Wallet-Only Auth:** Finalize Wagmi/RainbowKit middleware for user sessions.
 
 ## Phase 4: Expansion & Advanced Features (Strategic)
-- [x] **AI-Intent Matching:** Implement logic to compare NatSpec documentation against implementation logic to find "Intent-Implementation" gaps. (Initial Parser Engine)
-- [ ] **Centralization Radar:** Map `onlyOwner` and admin roles to a visual heatmap on the dashboard.
+- [ ] **AI-Intent Matching (Shadow Verification):** Implement logic to detect "Code-Comment Deviations" by comparing NatSpec against implementation.
+- [ ] **Centralization Radar (Comprehensive Risk UI):** Develop a full permission map and risk heatmap for admin roles and privileged functions.
 - [ ] **Base On-Chain Registry:** Deploy a contract on Base to store audit report hashes for immutable verification.
-- [ ] **x402 Micro-Tiers:** Update the pricing model to allow single-function or single-file audits using x402 headers.
+- [ ] **x402 File-Level Tiers:** Update pricing model to allow granular pay-per-line audits for specific `.sol` files.
+
+## Phase 5: Market Intelligence & Benchmarking
+- [ ] **Security Benchmarking Engine:** Build an aggregator to compare project scores against industry peers.
+- [ ] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking.
+- [ ] **EAS Attestations:** Integrate Ethereum Attestation Service for on-chain audit score verification.
 
 ## Critical Milestones (Current Priority)
 1. **Package Setup:** Create `packages/database` and `packages/ui` to complete the monorepo structure.
