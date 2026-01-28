@@ -32,7 +32,7 @@
 
 ## Phase 5: Market Intelligence & Benchmarking
 - [x] **Security Benchmarking Engine:** Build an aggregator to compare project scores against industry peers. (V1 Core Implemented)
-- [ ] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking.
+- [x] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking. (UI Implementation Live)
 - [ ] **EAS Attestations:** Integrate Ethereum Attestation Service for on-chain audit score verification.
 
 ## Critical Milestones (Current Priority)
