@@ -21,6 +21,7 @@
 ## Phase 3: Dashboard & UX
 - [x] **Connect Frontend to API:** Implement data fetching in `packages/nextjs` from `packages/hono-server`. (Full Cycle: Quote -> Pay -> Result)
 - [x] **Safety Score Visualization:** Build components for the "Audit Safety Score" and advanced metrics.
+- [x] **Deploy Contracts:** Set up deployment scripts for `ClawditorSubscription`.
 - [ ] **Wallet-Only Auth:** Finalize Wagmi/RainbowKit middleware for user sessions.
 
 ## Phase 4: Expansion & Advanced Features (Strategic)
