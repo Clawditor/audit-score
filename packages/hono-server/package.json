@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "hono": "^4.11.7"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "license": "MIT",
+  "main": "src/index.ts",
+  "name": "@audit-score/hono-server",
+  "scripts": {
+    "dev": "tsx src/index.ts"
+  },
+  "version": "1.0.0"
+}
