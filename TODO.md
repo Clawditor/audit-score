@@ -7,7 +7,7 @@
 
 ## Phase 1: Infrastructure & Structure
 - [x] **Database Setup:** Create `packages/database` for Drizzle ORM with PostgreSQL schema for scan history and user tiers.
-- [ ] **Environment Configuration:** Set up `.env` templates for API keys, DB URLs, and Contract addresses.
+- [x] **Environment Configuration:** Set up `.env` templates for API keys, DB URLs, and Contract addresses.
 
 ## Phase 2: Core Web3 Logic ($clawditor & x402)
 - [x] **Subscription Contract:**
