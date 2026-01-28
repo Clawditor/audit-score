@@ -12,6 +12,7 @@ interface ScanResult {
   loc: number;
   safetyScore: number;
   issues: { severity: string; title: string; range: number[] }[];
+  centralization?: { roles: string[]; functions: string[] };
   timestamp: string;
 }
 
@@ -140,7 +141,7 @@ const AuditPage: NextPage = () => {
               <div className="card bg-base-200 shadow-xl rounded-3xl overflow-hidden">
                 <div className="card-body items-center text-center p-10">
                   <h2 className="card-title text-2xl mb-4 text-primary">Audit Complete</h2>
-                  <div className="stats shadow bg-base-100 w-full rounded-2xl mb-4">
+                  <div className="stats shadow bg-base-100 w-full rounded-2xl mb-4 text-neutral-content">
                     <div className="stat">
                       <div className="stat-title text-sm opacity-60">Safety Score</div>
                       <div
@@ -162,6 +163,37 @@ const AuditPage: NextPage = () => {
                   </div>
                 </div>
               </div>
+
+              {scanResult.centralization && (
+                <div className="card bg-base-200 shadow-xl rounded-3xl">
+                  <div className="card-body p-8">
+                    <h3 className="text-xl font-bold mb-4 flex items-center">
+                      <span className="mr-2">📡</span> Centralization Radar
+                    </h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="bg-base-100 p-4 rounded-2xl border border-base-300">
+                        <p className="text-sm font-bold opacity-60 mb-2 uppercase">Identified Roles</p>
+                        <div className="flex flex-wrap gap-2">
+                          {scanResult.centralization.roles.length > 0 ? (
+                            scanResult.centralization.roles.map((role, i) => (
+                              <span key={i} className="badge badge-secondary">
+                                {role}
+                              </span>
+                            ))
+                          ) : (
+                            <span className="text-sm italic">No privileged roles found.</span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="bg-base-100 p-4 rounded-2xl border border-base-300">
+                        <p className="text-sm font-bold opacity-60 mb-2 uppercase">Restricted Functions</p>
+                        <p className="text-2xl font-mono text-primary">{scanResult.centralization.functions.length}</p>
+                        <p className="text-xs opacity-50">Controlled via Access Policy</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               <div className="card bg-base-200 shadow-xl rounded-3xl">
                 <div className="card-body p-8 text-left">
