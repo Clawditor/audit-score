@@ -19,7 +19,7 @@
 - [ ] **Scan Engine:** Connect the Hono API to the audit scanning logic (or analyzer tool).
 
 ## Phase 3: Dashboard & UX
-- [ ] **Connect Frontend to API:** Implement data fetching in `packages/nextjs` from `packages/hono-server`.
+- [ ] **Connect Frontend to API:** Implement data fetching in `packages/nextjs` from `packages/hono-server`. (In Progress - Added CORS to Hono)
 - [ ] **Safety Score Visualization:** Build components for the "Audit Safety Score" and advanced metrics.
 - [ ] **Wallet-Only Auth:** Finalize Wagmi/RainbowKit middleware for user sessions.
 
