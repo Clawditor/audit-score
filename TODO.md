@@ -31,7 +31,7 @@
 - [x] **x402 File-Level Tiers:** Update pricing model to allow granular pay-per-line audits for specific `.sol` files. (Deferred to Phase 5)
 
 ## Phase 5: Market Intelligence & Benchmarking
-- [ ] **Security Benchmarking Engine:** Build an aggregator to compare project scores against industry peers.
+- [x] **Security Benchmarking Engine:** Build an aggregator to compare project scores against industry peers. (V1 Core Implemented)
 - [ ] **Relative Security Dashboard:** Visualize protocol security percentiles and competitive benchmarking.
 - [ ] **EAS Attestations:** Integrate Ethereum Attestation Service for on-chain audit score verification.
 
