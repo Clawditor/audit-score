@@ -2,6 +2,7 @@ import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { countLoC } from "./utils";
 import { analyzeIntent } from "./intentMatcher";
+import { analyzeCentralization } from "./centralizationRadar";
 
 const app = new Hono();
 
@@ -37,6 +38,9 @@ app.post("/scan/run", async (c) => {
     }))
   ];
 
+  // Centralization analysis
+  const centralization = analyzeCentralization(code);
+  
   const loc = countLoC(code);
   const safetyScore = Math.max(0, 100 - (allIssues.length * 15));
 
@@ -45,6 +49,7 @@ app.post("/scan/run", async (c) => {
     loc,
     safetyScore,
     issues: allIssues,
+    centralization,
     timestamp: new Date().toISOString(),
     contractAddress: address,
     verified: !!txHash,
