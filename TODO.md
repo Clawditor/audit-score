@@ -16,7 +16,7 @@
 - [x] **x402 Integration:**
   - Implement LoC (Lines of Code) counter utility in `packages/hono-server`.
   - Integrate x402 payment flow for pay-per-line audits. (Initial quote endpoint)
-- [ ] **Scan Engine:** Connect the Hono API to the audit scanning logic (or analyzer tool).
+- [x] **Scan Engine:** Connect the Hono API to the audit scanning logic (or analyzer tool). (Phase 3 Initial Mock)
 
 ## Phase 3: Dashboard & UX
 - [ ] **Connect Frontend to API:** Implement data fetching in `packages/nextjs` from `packages/hono-server`. (In Progress - Added CORS to Hono)

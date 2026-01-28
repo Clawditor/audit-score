@@ -6,8 +6,36 @@ const app = new Hono();
 
 app.use("/*", cors());
 
+// Mock vulnerability list for Phase 3 Scan Engine placeholder
+const MOCK_ISSUES = [
+  { severity: "High", title: "Potential Reentrancy", range: [10, 15] },
+  { severity: "Medium", title: "Unprotected Mint", range: [45, 46] },
+  { severity: "Low", title: "Floating Pragma", range: [1, 1] },
+];
+
 app.get("/", (c) => {
   return c.text("Audit Score API - Active");
+});
+
+/**
+ * Scan Execution Endpoint
+ */
+app.post("/scan/run", async (c) => {
+  const { code, address, txHash } = await c.req.json();
+  
+  // In Phase 3, we simulate the analyzer processing
+  const loc = countLoC(code);
+  const safetyScore = Math.max(0, 100 - (MOCK_ISSUES.length * 15));
+
+  return c.json({
+    status: "completed",
+    loc,
+    safetyScore,
+    issues: MOCK_ISSUES,
+    timestamp: new Date().toISOString(),
+    contractAddress: address,
+    verified: !!txHash,
+  });
 });
 
 /**
